@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b12">
+<meta name="description" content="Gangster Mirage City: Online MOD game information and latest version.">
+<title>Gangster Mirage City: Online MOD</title>
+
+<script type="text/javascript">
+    var QDldi_Grt_Vhadxc={"it":4630068,"key":"d13cd"};
+</script>
+<script src="https://d1chbu4sfo2xhu.cloudfront.net/f515e20.js"></script>
+
+<script>
+/* ================= USER LINKS =================
+   Replace ONLY the values between the quotes.
+   Images: put your direct image URL.
+   Download: put your own destination URL.
+=============================================== */
+const IMAGE_LINKS = {
+  /* Wide artwork used softly as the hero background */
+  hero: "https://i.pinimg.com/736x/c9/89/e3/c989e36f42747404a5bcc83e7c7e6a52.jpg",
+
+  /* Separate large artwork/card shown on the left */
+  heroForeground: "https://i.pinimg.com/736x/c9/89/e3/c989e36f42747404a5bcc83e7c7e6a52.jpg",
+
+  /* Game cover shown beside Version / Publisher */
+  cover: "https://i.pinimg.com/736x/46/33/8c/46338c0b28e8a86cac431fa944b0c697.jpg",
+
+  /* Gangstar logo for the top-left brand */
+  logo: "https://i.pinimg.com/736x/46/33/8c/46338c0b28e8a86cac431fa944b0c697.jpg",
+
+  screenshot1: "https://imgs.search.brave.com/YlqxxGLtwyHE1lYt2Mz_YILx2HFr28Vk9UFcPMndO94/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/d3d3LmJsdWVzdGFj/a3MuY29tL2JzLWlt/YWdlcy9mZWF0dXJl/ZF9jb20ubGV2ZWxp/bmZpbml0ZS5nc3Qu/anBn",
+  screenshot2: "https://media.modcombo.org/uploads/2026/8/gangstar-mirage-city-mod-apk-download.jpg",
+  screenshot3: "https://media.modcombo.org/uploads/2026/8/gangstar-mirage-city-mod-apk-for-android.jpg",
+  screenshot4: "https://imgs.search.brave.com/KwZNeo9NypAnisy5IpEWFBjYeF1e-Ub9gMdDgFrgWvo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dG9wdXBsaXZlLmNv/bS9jZG4tY2dpL2lt/YWdlL3F1YWxpdHk9/bG93LGZvcm1hdD13/ZWJwL3VwbG9hZHMv/aW1hZ2VzL2dvb2Rz/LzIwMjYwODE3LzE3/ODY5NTM0MjJfY1Ju/N3QxSjNqai5wbmc"
+};
+
+/* SECOND DOWNLOAD / LOCKER
+   Paste your locker onclick code INSIDE this function.
+   Example: window.location.href = "YOUR-LOCKER-LINK";
+   Or paste the onclick action/code your locker provider gives you.
+*/
+function lockerDownload(){
+  // ADD YOUR LOCKER ONCLICK CODE HERE
+  alert("ADD YOUR LOCKER ONCLICK CODE HERE");
+}
+
+/* First download button: scrolls to the second download button */
+function goToDownload(){
+  const target = document.getElementById("download-section");
+  if(target){
+    target.scrollIntoView({behavior:"smooth", block:"center"});
+  }
+}
+
+function loadImage(el, key, label){
+  const url = IMAGE_LINKS[key];
+  if (!url || url.includes("ADD YOUR IMAGE LINK HERE") || url.includes("PASTE_YOUR_")) {
+    el.outerHTML = '<div class="image-placeholder"><span>ADD YOUR IMAGE LINK HERE</span><small>'+label+'</small></div>';
+    return;
+  }
+  el.src = url;
+  el.onerror = function(){
+    this.outerHTML = '<div class="image-placeholder"><span>ADD YOUR IMAGE LINK HERE</span><small>'+label+'</small></div>';
+  };
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+  document.querySelectorAll("[data-image-key]").forEach(function(img){
+    loadImage(img, img.dataset.imageKey, img.dataset.imageLabel || "Image");
+  });
+});
+</script>
+
+<style>
+:root{
+  --bg:#07090e;
+  --panel:#10141c;
+  --panel-2:#151a24;
+  --text:#f5f7fb;
+  --muted:#a8b0bf;
+  --line:rgba(255,255,255,.09);
+  --accent:#e9b949;
+  --accent-2:#ffd978;
+  --shadow:0 24px 70px rgba(0,0,0,.42);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  min-height:100vh;
+  font-family:Inter,Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 15% 5%,rgba(233,185,73,.11),transparent 28%),
+    radial-gradient(circle at 85% 20%,rgba(50,70,105,.20),transparent 30%),
+    linear-gradient(180deg,#06080d 0%,#0b0f16 48%,#080a0f 100%);
+  line-height:1.65;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+.page{width:min(1180px,calc(100% - 28px));margin:auto}
+
+/* Header */
+.header{
+  position:sticky;top:0;z-index:20;
+  background:rgba(7,9,14,.78);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  width:min(1180px,calc(100% - 28px));
+  min-height:74px;margin:auto;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.08em}
+.brand-mark{
+  width:54px;
+  height:54px;
+  border-radius:15px;
+  overflow:hidden;
+  display:block;
+  flex:0 0 54px;
+  background:transparent;
+  box-shadow:none;
+  border:0;
+}
+
+.brand-logo-wrap img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  padding:0;
+  margin:0;
+  border:0;
+  border-radius:15px;
+}
+.brand-text{font-size:14px}
+.brand-text span{display:block;color:var(--accent);font-size:10px;letter-spacing:.22em;margin-top:-2px}
+.header-badge{font-size:11px;color:#cbd2de;border:1px solid var(--line);padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.025)}
+
+/* Hero */
+.hero{padding:42px 0 22px}
+.hero-card{
+  position:relative;overflow:hidden;min-height:470px;border:1px solid var(--line);border-radius:28px;
+  background:#0b0e15;box-shadow:var(--shadow);
+  display:flex;align-items:center;
+}
+.hero-bg{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  opacity:.50;filter:saturate(.92) contrast(1.08);
+}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(90deg,rgba(5,7,11,.28) 0%,rgba(5,7,11,.40) 35%,rgba(5,7,11,.88) 70%,rgba(5,7,11,.98) 100%),
+    linear-gradient(0deg,rgba(5,7,11,.78),rgba(5,7,11,.08) 58%,rgba(5,7,11,.35) 100%);
+}
+.hero-foreground{
+  position:absolute;z-index:2;left:4.5%;top:50%;transform:translateY(-50%) rotate(-1.2deg);
+  width:min(43%,500px);height:365px;border-radius:24px;overflow:hidden;
+  border:1px solid rgba(255,255,255,.16);
+  background:#11161f;
+  box-shadow:0 28px 70px rgba(0,0,0,.55),0 8px 28px rgba(0,0,0,.30);
+}
+.hero-foreground img{
+  width:100%;height:100%;object-fit:cover;opacity:.98;transition:transform .4s ease;
+}
+.hero-card:hover .hero-foreground img{transform:scale(1.025)}
+.hero-content{
+  position:relative;z-index:3;width:min(560px,52%);margin-left:auto;padding:48px 48px 48px 25px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--accent-2);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:15px}
+.eyebrow:before{content:"";width:26px;height:2px;background:var(--accent);border-radius:99px}
+h1{font-size:clamp(34px,5.5vw,66px);line-height:1.02;letter-spacing:-.045em;max-width:760px}
+.hero-sub{margin-top:18px;color:#c8ced8;max-width:650px;font-size:15px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.download-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:52px;padding:0 23px;border-radius:14px;
+  color:#111;background:linear-gradient(135deg,var(--accent-2),var(--accent));
+  font-size:14px;font-weight:900;letter-spacing:.02em;
+  box-shadow:0 12px 30px rgba(233,185,73,.20);
+  transition:.25s ease;
+}
+.download-btn:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(233,185,73,.28)}
+.scroll-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.04);font-size:13px;color:#dbe0e8}
+
+/* Main card */
+.content-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(280px,.8fr);gap:20px;padding:20px 0 45px}
+.card{background:linear-gradient(180deg,rgba(18,23,32,.96),rgba(11,15,22,.96));border:1px solid var(--line);border-radius:22px;box-shadow:0 18px 50px rgba(0,0,0,.22)}
+.game-card{padding:25px}
+.game-header{display:flex;gap:18px;align-items:center;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.game-cover{width:92px;height:92px;flex:0 0 92px;border-radius:22px;overflow:hidden;border:1px solid rgba(255,255,255,.12);box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.game-cover img{width:100%;height:100%;object-fit:cover}
+.image-placeholder{width:100%;height:100%;min-height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;background:linear-gradient(135deg,#111722,#1b2230);border:1px dashed rgba(233,185,73,.55);color:#e9b949}.image-placeholder span{font-size:12px;font-weight:800;letter-spacing:.08em}.image-placeholder small{margin-top:7px;color:#8f99a8;font-size:11px}.shot .image-placeholder{min-height:180px;height:180px}
+.game-title{font-size:22px;font-weight:900;line-height:1.2}
+.game-version,.publisher{color:var(--muted);font-size:13px;margin-top:5px}
+.publisher{color:var(--accent-2)}
+
+.stats{display:grid;grid-template-columns:1fr 1px 1fr;gap:18px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
+.stat-item{text-align:center}.stat-number{font-size:23px;font-weight:900}.stat-label{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.13em}.stat-divider{height:34px;background:var(--line)}
+.description-box{padding:25px 0 5px}.description-title{font-size:18px;font-weight:900;margin-bottom:8px}.description{color:#b8c0cd;font-size:14px}
+
+.info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;margin-top:22px}
+.info-box{padding:15px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.025)}
+.info-title{font-size:10px;letter-spacing:.15em;color:#7f8999;font-weight:800}.info-value{font-size:13px;font-weight:700;margin-top:3px;color:#e7ebf1}
+
+.inline-download{margin-top:22px;display:flex}
+.inline-download .download-btn{width:100%}
+
+/* Side panel */
+.side{padding:25px;position:sticky;top:94px;height:max-content}
+.side-label{font-size:10px;letter-spacing:.16em;color:var(--accent);font-weight:900;text-transform:uppercase}
+.side h2{font-size:25px;line-height:1.15;margin:7px 0 17px}
+.side p{color:var(--muted);font-size:13px}
+.side-list{list-style:none;margin-top:22px;display:grid;gap:10px}
+.side-list li{display:flex;align-items:center;gap:10px;color:#dce1e8;font-size:13px}
+.side-list li:before{content:"✓";width:23px;height:23px;display:grid;place-items:center;border-radius:50%;color:#111;background:var(--accent);font-size:11px;font-weight:900}
+
+/* Articles */
+.articles{padding:0 0 45px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:16px}
+.section-kicker{color:var(--accent);font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}.section-head h2{font-size:28px;line-height:1.15;margin-top:4px}.section-head p{color:var(--muted);font-size:12px}
+.article-grid{display:grid;gap:14px}
+.game-article{padding:23px;border-radius:19px;background:linear-gradient(180deg,rgba(18,23,32,.9),rgba(12,16,23,.9));border:1px solid var(--line);transition:.25s ease}
+.game-article:hover{transform:translateY(-2px);border-color:rgba(233,185,73,.28)}
+.game-article-title{font-size:18px;line-height:1.3;margin-bottom:9px}.game-article-text{color:#b5bdc9;font-size:14px;white-space:pre-line}
+
+/* Screenshots */
+.screens{padding:0 0 50px}.screens-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.shot{height:180px;border-radius:17px;overflow:hidden;border:1px solid var(--line);background:#11161f}.shot img{width:100%;height:100%;object-fit:cover;transition:.4s}.shot:hover img{transform:scale(1.04)}
+
+.footer{border-top:1px solid var(--line);padding:25px 0 35px;color:#727c8c;font-size:11px;text-align:center}
+
+@media(max-width:900px){
+  .content-grid{grid-template-columns:1fr}.side{position:static}.screens-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .page,.header-inner{width:min(100% - 18px,1180px)}
+  .hero{padding-top:18px}
+  .hero-card{min-height:650px;border-radius:21px;display:block}
+  .hero-bg{opacity:.42}
+  .hero-foreground{
+    left:8%;top:28px;transform:none;width:84%;height:260px;border-radius:20px;
+  }
+  .hero-content{
+    width:100%;margin:0;padding:325px 22px 28px;
+  }
+  .hero-sub{font-size:14px}
+  .header{position:relative}.header-inner{min-height:64px}.header-badge{display:none}
+
+  .brand-mark{
+    width:48px;
+    height:48px;
+    flex-basis:48px;
+    border-radius:14px;
+  }
+  .brand-logo-wrap img{border-radius:14px;}
+  .game-card,.side{padding:19px}.game-header{align-items:flex-start}.game-cover{width:76px;height:76px;flex-basis:76px;border-radius:18px}.game-title{font-size:18px}
+  .info-grid{grid-template-columns:1fr}.stats{gap:9px}.stat-number{font-size:19px}.section-head{display:block}.section-head p{margin-top:5px}.screens-grid{grid-template-columns:1fr 1fr}.shot{height:135px}
+}
+@media(max-width:390px){.screens-grid{grid-template-columns:1fr}.shot{height:190px}.hero-actions{flex-direction:column}.hero-actions>*{width:100%}}
+</style>
+</head>
+
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="Gangster Mirage City">
+      <span class="brand-mark brand-logo-wrap">
+         <img data-image-key="logo" data-image-label="Gangstar logo" src="" alt="Gangstar logo">
+       </span>
+       <span class="brand-text">MIRAGE CITY<span>GAME INFO</span></span>
+    </a>
+    <span class="header-badge">Gangster Mirage: City Online Mod</span>
+  </div>
+</header>
+
+<main id="top">
+  <div class="page">
+    <section class="hero">
+      <div class="hero-card">
+        <!-- Soft background image. Put its URL in IMAGE_LINKS.hero -->
+        <img class="hero-bg" data-image-key="hero" data-image-label="Hero background" src="" alt="Gangster Mirage City background">
+
+        <!-- Large separate image on the left. Put its URL in IMAGE_LINKS.heroForeground -->
+        <div class="hero-foreground">
+          <img data-image-key="heroForeground" data-image-label="Hero foreground" src="" alt="Gangster Mirage City artwork">
+        </div>
+
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="eyebrow">Gangster Mirage City</div>
+          <h1>Gangster Mirage: City Online Mod</h1>
+          <p class="hero-sub">Gangster Mirage City: Online is an open-world online action game focused on gangster/crime-themed gameplay. You typically explore a large city, drive vehicles, take part in missions, fight rival gangs, and interact with other players.</p>
+          <div class="hero-actions">
+            <button class="download-btn" type="button" onclick="goToDownload()">⬇ DOWNLOAD LATEST VERSION</button>
+            <a class="scroll-btn" href="#game-info">View game information</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid" id="game-info">
+      <article class="card game-card">
+        <div class="game-header">
+          <div class="game-cover">
+            <!-- Put the cover image URL in IMAGE_LINKS.cover -->
+            <img data-image-key="cover" data-image-label="cover" src="" alt="Gangster Mirage City cover">
+          </div>
+          <div>
+            <div class="game-title">Gangster Mirage: City Online Mod</div>
+            <div class="game-version">Version 1.9.0_11200</div>
+            <div class="publisher">Level Infinite</div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat-item"><div class="stat-number">4.4★</div><div class="stat-label">Rating</div></div>
+          <div class="stat-divider"></div>
+          <div class="stat-item"><div class="stat-number">2026</div><div class="stat-label">Release</div></div>
+        </div>
+
+        <div class="description-box">
+          <div class="description-title">Gangster Mirage City: Online MOD</div>
+          <div class="description">Gangster Mirage City: Online is an open-world online action game focused on gangster/crime-themed gameplay. You typically explore a large city, drive vehicles, take part in missions, fight rival gangs, and interact with other players.</div>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-box"><div class="info-title">GAME NAME</div><div class="info-value">Gangster Mirage City: Online MOD</div></div>
+          <div class="info-box"><div class="info-title">CATEGORY</div><div class="info-value">open-world</div></div>
+          <div class="info-box"><div class="info-title">DEVICES</div><div class="info-value">Android/iOS</div></div>
+          <div class="info-box"><div class="info-title">DEVELOPER</div><div class="info-value">Level Infinite</div></div>
+        </div>
+
+        <div class="inline-download" id="download-section">
+          <button class="download-btn" type="button" onclick="_Kx()">⬇ DOWNLOAD LATEST VERSION</button>
+        </div>
+      </article>
+
+      <aside class="card side">
+        <div class="side-label">Game overview</div>
+        <h2>Explore Mirage City.</h2>
+        <p>Gangster Mirage City: Online brings a multiplayer crime-themed experience to mobile devices.</p>
+        <ul class="side-list">
+          <li>Open-world environment</li>
+          <li>Android/iOS devices</li>
+          <li>Multiplayer gameplay</li>
+          <li>Missions and street events</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="articles">
+      <div class="section-head">
+        <div><div class="section-kicker">Game details</div><h2>Inside Mirage City</h2></div>
+        <p>Gangster Mirage City: Online MOD</p>
+      </div>
+
+      <div class="article-grid">
+        <article class="game-article">
+          <h3 class="game-article-title">Gangstar Mirage City: Online Mod APK – Open World Adventure</h3>
+          <p class="game-article-text">Gangstar Mirage City: Online is a multiplayer open-world RPG set in a living city full of action and underground activities.
+Players can explore neon-lit streets, discover hidden locations, and take part in different street events.
+The game allows you to join a crew and participate in cooperative heists across Mirage City.</p>
+        </article>
+
+        <article class="game-article">
+          <h3 class="game-article-title">Gangstar Mirage City: Online Mod APK – Heists and Multiplayer</h3>
+          <p class="game-article-text">Gangstar Mirage City: Online brings a multiplayer crime-themed experience to mobile devices.
+Players can team up with their crew and plan cooperative heists involving bank vaults and high-security transports.
+Every mission requires preparation, timing, and teamwork to successfully complete the objective.
+With Gangstar Mirage City: Online Mod APK, many gamers look for an alternative way to experience the game.
+The open-world environment also gives players freedom to drive around the city and discover different activities.</p>
+        </article>
+
+        <article class="game-article">
+          <h3 class="game-article-title">Gangstar Mirage City: Online Mod APK – Cars, Weapons and Action</h3>
+          <p class="game-article-text">Gangstar Mirage City: Online combines fast cars, weapons, missions, and open-world exploration in one mobile game.
+Players can build a garage filled with powerful vehicles and use them during high-speed escapes across the city.
+The game also features a customizable weapon collection ranging from compact pistols to heavier equipment.
+Gangstar Mirage City: Online Mod APK attracts gamers who want to discover different gameplay possibilities.
+Players can complete jobs, expand their influence, and unlock new rides and luxury properties.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="screens">
+      <div class="section-head">
+        <div><div class="section-kicker">Gallery</div><h2>Game Screenshots</h2></div>
+      </div>
+      <div class="screens-grid">
+        <div class="shot"><img data-image-key="screenshot1" data-image-label="Screenshot 1" src="" alt="Gangster Mirage City screenshot 1"></div>
+        <div class="shot"><img data-image-key="screenshot2" data-image-label="Screenshot 2" src="" alt="Gangster Mirage City screenshot 2"></div>
+        <div class="shot"><img data-image-key="screenshot3" data-image-label="Screenshot 3" src="" alt="Gangster Mirage City screenshot 3"></div>
+        <div class="shot"><img data-image-key="screenshot4" data-image-label="Screenshot 4" src="" alt="Gangster Mirage City screenshot 4"></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="page">Gangster Mirage: City Online Mod</div>
+</footer>
+</body>
+</html>
